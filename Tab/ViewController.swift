@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  Tab
-//
-//  Created by 현구김 on 2022/12/24.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
@@ -15,5 +8,13 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func btnMoveImageView(_ sender: UIButton) {
+        tabBarController?.selectedIndex = 1
+    }
+    
+    
+    @IBAction func btnMoveDatePickerView(_ sender: UIButton) {
+        tabBarController?.selectedIndex = 2
+    }
 }
 
