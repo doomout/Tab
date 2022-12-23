@@ -13,6 +13,11 @@
 		AD9E3ABE29562587004E0900 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD9E3ABC29562587004E0900 /* Main.storyboard */; };
 		AD9E3AC029562588004E0900 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD9E3ABF29562588004E0900 /* Assets.xcassets */; };
 		AD9E3AC329562588004E0900 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD9E3AC129562588004E0900 /* LaunchScreen.storyboard */; };
+		AD9E3ACC29563E25004E0900 /* lamp_on.png in Resources */ = {isa = PBXBuildFile; fileRef = AD9E3ACA29563E25004E0900 /* lamp_on.png */; };
+		AD9E3ACD29563E25004E0900 /* lamp_off.png in Resources */ = {isa = PBXBuildFile; fileRef = AD9E3ACB29563E25004E0900 /* lamp_off.png */; };
+		AD9E3ACF29563EA8004E0900 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9E3ACE29563EA8004E0900 /* ImageViewController.swift */; };
+		AD9E3AD129564069004E0900 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9E3AD029564069004E0900 /* DateViewController.swift */; };
+		AD9E3AD329564288004E0900 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AD9E3AD229564288004E0900 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		AD9E3ABF29562588004E0900 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD9E3AC229562588004E0900 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD9E3AC429562588004E0900 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD9E3ACA29563E25004E0900 /* lamp_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lamp_on.png; sourceTree = "<group>"; };
+		AD9E3ACB29563E25004E0900 /* lamp_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lamp_off.png; sourceTree = "<group>"; };
+		AD9E3ACE29563EA8004E0900 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		AD9E3AD029564069004E0900 /* DateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateViewController.swift; sourceTree = "<group>"; };
+		AD9E3AD229564288004E0900 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +50,7 @@
 		AD9E3AAA29562587004E0900 = {
 			isa = PBXGroup;
 			children = (
+				AD9E3AD229564288004E0900 /* README.md */,
 				AD9E3AB529562587004E0900 /* Tab */,
 				AD9E3AB429562587004E0900 /* Products */,
 			);
@@ -56,13 +67,17 @@
 		AD9E3AB529562587004E0900 /* Tab */ = {
 			isa = PBXGroup;
 			children = (
+				AD9E3ACB29563E25004E0900 /* lamp_off.png */,
+				AD9E3ACA29563E25004E0900 /* lamp_on.png */,
 				AD9E3AB629562587004E0900 /* AppDelegate.swift */,
 				AD9E3AB829562587004E0900 /* SceneDelegate.swift */,
 				AD9E3ABA29562587004E0900 /* ViewController.swift */,
 				AD9E3ABC29562587004E0900 /* Main.storyboard */,
+				AD9E3ACE29563EA8004E0900 /* ImageViewController.swift */,
 				AD9E3ABF29562588004E0900 /* Assets.xcassets */,
 				AD9E3AC129562588004E0900 /* LaunchScreen.storyboard */,
 				AD9E3AC429562588004E0900 /* Info.plist */,
+				AD9E3AD029564069004E0900 /* DateViewController.swift */,
 			);
 			path = Tab;
 			sourceTree = "<group>";
@@ -125,7 +140,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD9E3AD329564288004E0900 /* README.md in Resources */,
+				AD9E3ACC29563E25004E0900 /* lamp_on.png in Resources */,
 				AD9E3AC329562588004E0900 /* LaunchScreen.storyboard in Resources */,
+				AD9E3ACD29563E25004E0900 /* lamp_off.png in Resources */,
 				AD9E3AC029562588004E0900 /* Assets.xcassets in Resources */,
 				AD9E3ABE29562587004E0900 /* Main.storyboard in Resources */,
 			);
@@ -138,8 +156,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD9E3AD129564069004E0900 /* DateViewController.swift in Sources */,
 				AD9E3ABB29562587004E0900 /* ViewController.swift in Sources */,
 				AD9E3AB729562587004E0900 /* AppDelegate.swift in Sources */,
+				AD9E3ACF29563EA8004E0900 /* ImageViewController.swift in Sources */,
 				AD9E3AB929562587004E0900 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,8 +312,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -319,8 +338,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
